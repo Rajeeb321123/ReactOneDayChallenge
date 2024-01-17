@@ -15,12 +15,7 @@ function App() {
   
       <Routes>
           <Route path='/' element={<Login/>}></Route>
-
-          {/* dynamic routing */}
-          {/* /:value  is dynamic value for url */}
           <Route path='/home' element={<Home/>}></Route>
-
-          {/*  '/*' routes means if the none of the above routes are choose then /* will be open  */}
           <Route path='*' element={<PageNotFound/>}></Route>
       </Routes>
       
