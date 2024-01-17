@@ -1,0 +1,94 @@
+
+
+.accordion {
+    padding: 5px 3%;
+    border-radius: 2px;
+
+    .department{
+        padding: 3x;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        gap: 20px;
+        
+
+        span{
+            font-size: large;
+            font-weight: 500;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+
+            .numberofsubdepartments{
+                font-size: medium;
+                color: gray;
+                margin-right: auto;
+                text-align: center;
+                
+            }
+        }
+
+        button{
+
+            
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all;
+            transition-duration: 300ms;
+            border: none;
+            background: transparent;
+
+            &:hover{
+                scale: 150%;
+            }
+
+            svg{
+                fill: #60a5fa;
+
+                .svg2{
+                    transform-origin: center;
+                    transition: all;
+                    transition-duration: 300ms;
+                    transition-timing-function: ease-out;
+                }
+                .rotate{
+                    transform: rotate(180deg) !important;
+                }
+                .rotate1 {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    .subdepartment {
+        padding: 0px 60px ;
+        display: grid;
+        overflow: hidden;
+        transition:all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+        width: 100%;
+        color: rgb(55 65 81);
+
+    
+    }
+
+    .openedAccordion {
+        grid-row: 1fr;
+        opacity: 100;
+        height: auto;
+        // display: block;
+    }
+    .closedAccordion {
+        grid-row: 0fr;
+        opacity: 0;
+        height: 0px;
+        // display: none;
+    }
+
+    .eachsubdepartment{
+        overflow: hidden;
+    }
+}
