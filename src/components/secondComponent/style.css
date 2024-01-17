@@ -65,7 +65,7 @@
     .subdepartment {
         padding: 0px 60px ;
         display: grid;
-        overflow: hidden;
+        
         transition:all;
         transition-duration: 300ms;
         transition-timing-function: ease-in-out;
@@ -89,6 +89,6 @@
     }
 
     .eachsubdepartment{
-        overflow: hidden;
+        
     }
 }
