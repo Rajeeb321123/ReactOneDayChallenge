@@ -34,8 +34,9 @@ function Login() {
     <div className="login">
       <form onSubmit={handleSubmit}>
         <h1>Sign in</h1>
-        <label htmlFor="">Username</label>
+        <label htmlFor="username">Username</label>
         <input
+          id="username"
           name="username"
           type="text"
           placeholder="Rajeeb Chhetri"
@@ -43,20 +44,24 @@ function Login() {
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUserName(e.target.value)}
         />
 
-        <label htmlFor="">Phone number</label>
+        <label htmlFor="userNumber">Phone number</label>
         <input
+          id="userNmber"
           name="userNumber"
           type="tel"
           size={20}
           minLength={9}
           maxLength={14}
+          placeholder="1234567821"
           required
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUserNumber(e.target.value)}
         />
-        <label htmlFor="">Email address</label>
+        <label htmlFor="userEmail">Email address</label>
         <input
+          id="userEmail"
           name="userEmail"
           type="email"
+          placeholder="example@email.com"
           required
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUserEmail(e.target.value)}
         />
