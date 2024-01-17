@@ -53,7 +53,7 @@ function Login() {
           required
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUserNumber(e.target.value)}
         />
-        <label htmlFor="">Phone number</label>
+        <label htmlFor="">Email address</label>
         <input
           name="userEmail"
           type="email"
