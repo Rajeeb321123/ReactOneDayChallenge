@@ -86,7 +86,7 @@ export default function Home() {
 
       {/* First component */}
       {
-        (loading === false || apiData.length !== 0) ? (
+        (loading === false && apiData.length !== 0) ? (
 
           <DataTable tableData={apiData} />
         ) : (
